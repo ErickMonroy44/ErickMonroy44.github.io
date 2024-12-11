@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICM444 & MMBV444</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>EICM444 & MMBV444</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="#">Frases</a></li>
+                <li><a href="#">Momentos</a></li>
+                <li><a href="#">Nuestro Viaje</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Cuando te cuestiones el porque te elegí recuerda esto:</h2>
+            <p>"En tus ojos veo mi futuro, y en tu sonrisa, mi felicidad eterna."</p>
+        </div>
+    </section>
+
+    <!-- Sección de Fotos (Carrusel de fotos tipo carrete) -->
+    <section class="carousel">
+        <h2>Para la niña más hermosa</h2>
+        <div class="carousel-container">
+            <div class="carousel-images">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 09.55.19_17d676e9.jpg" alt="Foto 1">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 09.55.20_02027f97.jpg" alt="Foto 2">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 09.55.20_fe452a0d.jpg" alt="Foto 3">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 11.13.29_9f0286c1.jpg" alt="Foto 4">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 11.13.29_fb06b527.jpg" alt="Foto 5">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 09.55.19_17d676e9.jpg" alt="Foto 1">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 09.55.20_02027f97.jpg" alt="Foto 2">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 09.55.20_fe452a0d.jpg" alt="Foto 3">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 11.13.29_9f0286c1.jpg" alt="Foto 4">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 11.13.29_fb06b527.jpg" alt="Foto 5">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 09.55.19_17d676e9.jpg" alt="Foto 1">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 09.55.20_02027f97.jpg" alt="Foto 2">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 09.55.20_fe452a0d.jpg" alt="Foto 3">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 11.13.29_9f0286c1.jpg" alt="Foto 4">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 11.13.29_fb06b527.jpg" alt="Foto 5">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 09.55.19_17d676e9.jpg" alt="Foto 1">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 09.55.20_02027f97.jpg" alt="Foto 2">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 09.55.20_fe452a0d.jpg" alt="Foto 3">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 11.13.29_9f0286c1.jpg" alt="Foto 4">
+                <img src="C:\xampp\htdocs\EICM444\Imagen de WhatsApp 2024-12-10 a las 11.13.29_fb06b527.jpg" alt="Foto 5">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Frases -->
+    <section class="section" id="frases">
+        <h2>Quiero que sepas que...</h2>
+        <div class="quotes">
+            "Eres el amor que siempre soñé, la razón de mi felicidad y mi lugar seguro.""
+        </div>
+        
+    </section>
+
+    <!-- Sección de Momentos -->
+    <section class="section" id="momentos">
+        <h2>Momentos Inolvidables</h2>
+        <p>Recuerdos, sonrisas y momentos que siempre llevaremos en el corazón. Gracias por hacer cada día tan especial.</p>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Espero que te guste</h3>
+            <p>Atte:</p>
+            <p>Erick Iván Chávez Monroy</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para el carrusel -->
+    <script>
+        let currentIndex = 0;
+const images = document.querySelectorAll('.carousel-images img');
+const totalImages = images.length;
+
+// Función para mover el carrusel
+function moveToNextImage() {
+    currentIndex = (currentIndex + 1) % totalImages; // Incrementa el índice y lo reinicia si llega al final
+    updateCarouselPosition();
+}
+
+// Función para actualizar la posición del carrusel
+function updateCarouselPosition() {
+    const offset = -(currentIndex * 100); // Desplaza las imágenes en porcentaje
+    document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+}
+
+// Mueve al siguiente elemento cada 3 segundos, pero reinicia el carrusel con `setTimeout` para evitar retrasos
+function startCarousel() {
+    setInterval(() => {
+        moveToNextImage(); // Mueve al siguiente
+    }, 3000); // Cambia la imagen cada 3 segundos
+}
+
+// Inicializar el carrusel
+startCarousel();
+
+
+    </script>
+</body>
+</html>

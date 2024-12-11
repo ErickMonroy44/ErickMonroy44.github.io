@@ -1,0 +1,543 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente global */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #eae0f3, #ffffff); /* Fondo degradado morado claro */
+    color: #333;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #6a11cb, #a046fc); /* Degradado morado intenso */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar .logo h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(to right, #9d4edd, #f0c4ff);
+}
+
+.nav-links a:hover {
+    color: #fff;
+    background: linear-gradient(to right, #512da8, #9575cd);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #9575cd;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 80%;
+}
+
+/* Sección Hero */
+.hero {
+    background: linear-gradient(to bottom, #9d4edd, #ffffff);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+.hero p {
+    font-size: 1.5em;
+    max-width: 700px;
+    margin: 0 auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Carrusel de Fotos */
+.carousel {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.carousel h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    animation: slideIn 1s ease-out;
+}
+
+.carousel-container {
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-images img {
+    width: auto;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 8px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Sección de Frases */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    animation: slideIn 1s ease-out;
+}
+
+.quotes {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #6a11cb;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Sección de Momentos */
+#momentos {
+    background-color: #f0e6ff;
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 2px solid #9d4edd;
+}
+
+#momentos p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #6a11cb, #a046fc);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente global */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #eae0f3, #ffffff); /* Fondo degradado morado claro */
+    color: #333;
+    transition: background-color 0.5s ease-in-out;
+    overflow-x: hidden;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #6a11cb, #a046fc); /* Degradado morado intenso */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar .logo h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Galería */
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #6a11cb;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover img {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Vista ampliada */
+.preview {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    animation: previewEnter 0.5s forwards;
+}
+
+.preview img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.preview p {
+    font-size: 1.2em;
+    color: #6a11cb;
+}
+
+.preview-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.preview-close:hover {
+    background: #512da8;
+}
+
+/* Animación de apertura de la vista previa */
+@keyframes previewEnter {
+    from {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Fondo difuminado al activar la vista previa */
+body.preview-active {
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #6a11cb, #a046fc);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f0fb; /* Fondo suave de la paleta */
+    color: #4a235a; /* Texto principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #a569bd; /* Color morado vibrante */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.album {
+    margin: 30px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.album-title {
+    font-size: 1.8rem;
+    color: #4a235a; /* Morado oscuro */
+    margin-bottom: 20px;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.album-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.album-item:hover {
+    transform: scale(1.05);
+}
+
+.album-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(74, 35, 90, 0.8); /* Morado oscuro translúcido */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.album-item:hover .overlay {
+    transform: translateY(0);
+}
+
+.photo-preview {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.photo-preview.visible {
+    display: flex;
+}
+
+.photo-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.photo-preview p {
+    margin-top: 15px;
+    color: #4a235a;
+    font-size: 1rem;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #a569bd;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background: #6c3483;
+}
+
+footer {
+    background-color: #4a235a;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 30px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
