@@ -1,21 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nuestra Historia</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Fotos Animado & EICM444 & MMBV444</title>
+    <link rel="stylesheet" href="Estilo.css">
 </head>
 <body>
-  <header>
-    <a href="EICM444.html" class="btn-back">Volver a Inicio</a>
-    <h1>Nuestra Historia</h1>
-  </header>
-  <section class="content">
-    <p>Aquí puedes contar tu historia con detalles especiales y momentos inolvidables.</p>
-  </section>
-  <footer>
-    Hecho con 💖 para ti.
-  </footer>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Galería de Momentos & EICM444 & MMBV444</h1>
+            </div>
+            
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero" id="frases">
+        <div class="hero-content">
+            <h2>Cuando te cuestiones el porque te elegí recuerda esto:</h2>
+            <p>"En tus ojos veo mi futuro, y en tu sonrisa, mi felicidad eterna."</p>
+        </div>
+    </section>
+
+    <!-- Sección de Fotos (Album) -->
+    <section class="album" id="album">
+        <h2 class="album-title">Recuerdos Inolvidables</h2>
+        <div class="album-grid">
+            <div class="album-item" onclick="openPreview('C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 11.04.15_1c953c42.jpg', '5 minutos que son los más lindos')">
+                <img src="C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 11.04.15_1c953c42.jpg" alt="Recuerdo 1">
+                <div class="overlay">5 minutos</div>
+            </div>
+            <div class="album-item" onclick="openPreview('C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 11.04.15_845b9fd3.jpg', 'El verte convierte mi dia en algo maravilloso')">
+                <img src="C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 11.04.15_845b9fd3.jpg" alt="Recuerdo 2">
+                <div class="overlay">Vernos</div>
+            </div>
+            <div class="album-item" onclick="openPreview('C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_3aa0c20a.jpg', 'Te has convertido en mi lugar seguro')">
+                <img src="C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_3aa0c20a.jpg" alt="Recuerdo 3">
+                <div class="overlay">Contigo estoy seguro</div>
+            </div>
+            <div class="album-item" onclick="openPreview('C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_497cc52d.jpg', 'Es un nuevo recuerdo en mi alma')">
+                <img src="C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_497cc52d.jpg" alt="Recuerdo 4">
+                <div class="overlay">Cada salida</div>
+            </div>
+            <div class="album-item" onclick="openPreview('C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_707305ea.jpg', 'Un viaje inolvidable cada que nos vemos')">
+                <img src="C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_707305ea.jpg" alt="Recuerdo 5">
+                <div class="overlay">Salir juntos</div>
+            </div>
+            <div class="album-item" onclick="openPreview('C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_773036cb.jpg', 'Quiero cumplir muchas metas más junto a ti')">
+                <img src="C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_773036cb.jpg" alt="Recuerdo 6">
+                <div class="overlay">Cumplir metas</div>
+            </div>
+            <div class="album-item" onclick="openPreview('C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_aa377674.jpg', 'Gracias por tener un espacios para estar juntos')">
+                <img src="C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_aa377674.jpg" alt="Recuerdo 7">
+                <div class="overlay">Tener tiempo</div>
+            </div>
+            <div class="album-item" onclick="openPreview('C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_dfaab1a5.jpg', 'Te agradezco por creer en mi')">
+                <img src="C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_dfaab1a5.jpg" alt="Recuerdo 8">
+                <div class="overlay">Apoyo</div>
+            </div>
+            <div class="album-item" onclick="openPreview('C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_f1cdf6b6.jpg', 'El poder compratir cada momento es increible')">
+                <img src="C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 09.55.18_f1cdf6b6.jpg" alt="Recuerdo 9">
+                <div class="overlay">Estar Contigo</div>
+            </div>
+            <div class="album-item" onclick="openPreview('C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 11.04.14_79e3a29a.jpg', 'Cada llamada por las noches hacia mi dia perfecto')">
+                <img src="C:/xampp/htdocs/EICM444/Imagen de WhatsApp 2024-12-10 a las 11.04.14_79e3a29a.jpg" alt="Recuerdo 10">
+                <div class="overlay">Nuestra Historia</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Fotos (Carrusel de fotos tipo carrete) -->
+    <section class="carousel" id="momentos">
+        <h2>Para la niña más hermosa</h2>
+        <div class="carousel-container">
+            <div class="carousel-images">
+                <img src="Imagen de WhatsApp 2024-12-10 a las 09.55.18_3aa0c20a.jpg" alt="Foto 1">
+                <img src="Imagen de WhatsApp 2024-12-10 a las 11.13.29_9f0286c1.jpg" alt="Foto 2">
+                <img src="Imagen de WhatsApp 2024-12-10 a las 09.55.20_fe452a0d.jpg" alt="Foto 3">
+                <img src="Imagen de WhatsApp 2024-12-10 a las 11.13.29_9f0286c1.jpg" alt="Foto 4">
+                <img src="Imagen de WhatsApp 2024-12-10 a las 11.13.29_fb06b527.jpg" alt="Foto 5">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p> EICM444</p>
+    </footer>
+
+    <div class="photo-preview" id="photoPreview">
+        <button class="close-button" onclick="closePreview()">&times;</button>
+        <img id="previewImage" src="" alt="Foto seleccionada">
+        <p id="previewText"></p>
+    </div>
+
+    <script>
+        function openPreview(image, text) {
+            document.getElementById('previewImage').src = image;
+            document.getElementById('previewText').innerText = text;
+            document.getElementById('photoPreview').style.display = 'block';
+        }
+
+        function closePreview() {
+            document.getElementById('photoPreview').style.display = 'none';
+        }
+        // Selecciona todas las imágenes en el álbum
+const albumItems = document.querySelectorAll('.album-item');
+
+// Selecciona el popup de vista previa
+const photoPreview = document.querySelector('.photo-preview');
+const photoPreviewImage = photoPreview.querySelector('img');
+
+// Añade un evento de clic en cada imagen
+albumItems.forEach(item => {
+    item.addEventListener('click', () => {
+        // Eliminar clase "selected" de todas las imágenes
+        albumItems.forEach(i => i.classList.remove('selected'));
+        
+        // Añadir la clase "selected" a la imagen clickeada
+        item.classList.add('selected');
+        
+        // Mostrar el popup de vista previa con la imagen
+        const imageSrc = item.querySelector('img').src;
+        photoPreviewImage.src = imageSrc;
+        photoPreview.style.display = 'flex';
+        
+        // Agregar la clase para hacer visible el popup
+        setTimeout(() => {
+            photoPreview.classList.add('active');
+        }, 10);
+    });
+});
+
+// Cerrar el popup cuando se haga clic en él
+photoPreview.addEventListener('click', () => {
+    photoPreview.classList.remove('active');
+    setTimeout(() => {
+        photoPreview.style.display = 'none';
+    }, 300);
+});
+
+
+    </script>
+
 </body>
 </html>
